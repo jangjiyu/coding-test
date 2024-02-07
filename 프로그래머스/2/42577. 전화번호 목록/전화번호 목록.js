@@ -1,7 +1,6 @@
 function solution(phone_book) {
     let answer = true;
     
-    // phone_book sort
     phone_book.sort((a, b) => b - a);
     
     const minLen = phone_book[phone_book.length - 1].length;
@@ -14,8 +13,8 @@ function solution(phone_book) {
         }
     }
 
-    for(let i = phone_book.length - 1; i >= 0; i--) {
-        if(obj[phone_book[i]]) {
+    while(phone_book.length) {
+        if(obj[phone_book[phone_book.length - 1]]) {
             answer = false;
             break;
         }
