@@ -1,5 +1,5 @@
 function solution(sequence, k) {
-  let answer = [0, 1000000]; // 문제에서 제시된 범위보다 큰 숫자 넣기
+  let answer = [0, Infinity];
 
   let start = 0;
   let end = 0;
