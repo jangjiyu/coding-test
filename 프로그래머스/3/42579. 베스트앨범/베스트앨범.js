@@ -15,7 +15,7 @@ function solution(genres, plays) {
 
   sortedSumEntries.forEach((e) => {
     const sortedSong = playsOfGenreObj[e[0]].sort(([, valueA], [, valueB]) => valueB - valueA);
-    if(sortedSong[0]) answer.push(sortedSong[0][0]);
+    answer.push(sortedSong[0][0]);
     if(sortedSong[1]) answer.push(sortedSong[1][0]);
   });
 
